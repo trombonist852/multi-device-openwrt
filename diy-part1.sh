@@ -45,3 +45,6 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 #Add Package
 git clone https://github.com/tty228/luci-app-serverchan.git package/serverchan
 git clone https://github.com/wltc2005/openwrt-redsocks2.git package/redsocks2
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/argon-config
+git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/autotimeset
+git clone https://github.com/trombonist852/custom.git package/filetransfer
