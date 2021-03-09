@@ -39,12 +39,12 @@ rm -rf openwrt/package/lean/luci-app-filetransfer
 git clone https://github.com/tuanqing/install-program package/install-program
 
 # Theme
-svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-19.07
+svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom package/custom/luci-theme-infinityfreedom
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
 
 #Add Package
-git clone https://github.com/tty228/luci-app-serverchan.git package/serverchan
-git clone https://github.com/wltc2005/openwrt-redsocks2.git package/redsocks2
-git clone https://github.com/jerrykuku/luci-app-argon-config.git package/argon-config
-git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/autotimeset
-git clone https://github.com/trombonist852/custom.git package/filetransfer
+git clone https://github.com/tty228/luci-app-serverchan.git package/custom/serverchan
+git clone https://github.com/wltc2005/openwrt-redsocks2.git package/custom/redsocks2
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/argon-config
+git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/custom/autotimeset
+git clone https://github.com/trombonist852/custom.git package/custom/filetransfer
