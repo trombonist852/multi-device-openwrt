@@ -122,7 +122,7 @@ jobs:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
     
-    - name: organizer
+    - name: Organize files
       id: organizer
       if: steps.compile.outputs.status == 'success' && !cancelled()
       run: |
@@ -136,9 +136,9 @@ jobs:
           cp -r -f ${{ github.workspace }}/openwrt/bin/targets/*/*/packages/*.ipk ${{ github.workspace }}/dist/Packages/
           rm -f ${{ github.workspace }}/dist/Packages.gz
           cd ${{ github.workspace }}
-          if [ -f ${{ github.workspace }}/config/${{ matrix.target }}/organizer.sh ]; then
-            chmod +x ${{ github.workspace }}/config/${{ matrix.target }}/organizer.sh
-            /bin/bash ${{ github.workspace }}/config/${{ matrix.target }}/organizer.sh
+          if [ -f ${{ github.workspace }}/config/N1/organizer.sh ]; then
+            chmod +x ${{ github.workspace }}/config/N1/organizer.sh
+            /bin/bash ${{ github.workspace }}/config/N1/organizer.sh
           fi
           cd ${{ github.workspace }}/dist
           tar -czf Packages.tar.gz Packages
