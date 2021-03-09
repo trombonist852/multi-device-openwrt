@@ -1,0 +1,13 @@
+src-git packages https://github.com/Lienol/openwrt-packages.git;21.02
+src-git luci https://github.com/Lienol/openwrt-luci.git;21.02
+src-git routing https://git.openwrt.org/feed/routing.git;openwrt-21.02
+src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-21.02
+#src-link custom /usr/src/openwrt/custom-feed
+src-git lienol https://github.com/Lienol/openwrt-package.git;main
+src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main
+src-git OpenClash https://github.com/vernesong/OpenClash.git;master
+src-git nas https://github.com/jjm2473/nas-packages.git;master
+src-git Helloworld https://github.com/fw876/helloworld.git;master
+src-git oaf https://github.com/destan19/OpenAppFilter.git;master
+src-git custom https://github.com/trombonist852/custom.git;main
+src-git qBittorrent https://github.com/KryptonLee/qBittorrent-openwrt-package.git;master
