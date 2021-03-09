@@ -122,10 +122,10 @@ jobs:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
     
-         - name: 整理文件
-        id: organizer
-        if: steps.compile.outputs.status == 'success' && !cancelled()
-        run: |
+    - name: organizer
+      id: organizer
+      if: steps.compile.outputs.status == 'success' && !cancelled()
+      run: |
           mkdir -p ${{ github.workspace }}/dist/Packages
           cd ${{ github.workspace }}/openwrt/bin/targets/*/*
           find -name "*.buildinfo*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
