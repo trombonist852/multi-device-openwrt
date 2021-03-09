@@ -121,10 +121,10 @@ jobs:
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
-
+    
     - name: Organize files
-      id: organizer
-      if: steps.compile.outputs.status == 'success' && !cancelled()
+      id: organize
+      if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         mkdir -p ${{ github.workspace }}/dist/Packages
         cd ${{ github.workspace }}/openwrt/bin/targets/*/*
