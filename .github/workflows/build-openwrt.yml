@@ -122,37 +122,31 @@ jobs:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
     
-    - name: Organize files
-      id: organize
-      if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
-      run: |
-        mkdir -p ${{ github.workspace }}/dist/Packages
-        cd ${{ github.workspace }}/openwrt/bin/targets/*/*
-        find -name "*.buildinfo*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
-        find -name "*.bin*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
-        find -name "*.manifest*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
-        find -name "*.gz*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
+         - name: 整理文件
+        id: organizer
+        if: steps.compile.outputs.status == 'success' && !cancelled()
+        run: |
+          mkdir -p ${{ github.workspace }}/dist/Packages
+          cd ${{ github.workspace }}/openwrt/bin/targets/*/*
+          find -name "*.buildinfo*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
+          find -name "*.bin*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
+          find -name "*.manifest*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
+          find -name "*.gz*" | xargs -i mv -f {} ${{ github.workspace }}/dist/
+          cp -r -f ${{ github.workspace }}/openwrt/bin/packages/*/*/*.ipk ${{ github.workspace }}/dist/Packages/
+          cp -r -f ${{ github.workspace }}/openwrt/bin/targets/*/*/packages/*.ipk ${{ github.workspace }}/dist/Packages/
+          rm -f ${{ github.workspace }}/dist/Packages.gz
+          cd ${{ github.workspace }}
+          if [ -f ${{ github.workspace }}/config/${{ matrix.target }}/organizer.sh ]; then
+            chmod +x ${{ github.workspace }}/config/${{ matrix.target }}/organizer.sh
+            /bin/bash ${{ github.workspace }}/config/${{ matrix.target }}/organizer.sh
+          fi
+          cd ${{ github.workspace }}/dist
+          tar -czf Packages.tar.gz Packages
+          rm -rf Packages
+          sha256sum `ls -1 | sort` > sha256sums
+          echo "::set-output name=status::success"
+          echo "FIRMWARE=$PWD" >> $GITHUB_ENV
 
-        cp -r -f ${{ github.workspace }}/openwrt/bin/packages/*/*/*.ipk ${{ github.workspace }}/dist/Packages/
-        cp -r -f ${{ github.workspace }}/openwrt/bin/targets/*/*/packages/*.ipk ${{ github.workspace }}/dist/Packages/
-        
-        rm -f ${{ github.workspace }}/dist/Packages.gz
-
-        cd ${{ github.workspace }}
-
-        if [ -f ${{ github.workspace }}/config/${{ matrix.target }}/organizer.sh ]; then
-          chmod +x ${{ github.workspace }}/config/N1/organizer.sh
-          /bin/bash ${{ github.workspace }}/config/N1/organizer.sh
-        fi
-
-        cd ${{ github.workspace }}/dist
-        tar -czf Packages.tar.gz Packages
-        rm -rf Packages
-        sha256sum `ls -1 | sort` > sha256sums
-
-        echo "::set-output name=status::success"
-        echo "FIRMWARE=$PWD" >> $GITHUB_ENV
-         
     - name: Upload firmware directory
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
