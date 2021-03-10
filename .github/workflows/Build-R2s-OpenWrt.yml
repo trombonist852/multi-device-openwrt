@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: 21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: R2s.config
   DIY_P1_SH: diy-pi4-pi3-x86-r2s-1.sh
   DIY_P2_SH: diy-pi4-pi3-x86-r2s-2.sh
   UPLOAD_BIN_DIR: false
