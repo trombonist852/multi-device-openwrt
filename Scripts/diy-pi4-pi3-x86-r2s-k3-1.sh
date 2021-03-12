@@ -34,6 +34,7 @@ rm -rf package/lean/qBittorrent
 rm -rf package/lean/qt5
 rm -rf package/diy/OpenAppFilter
 rm -rf openwrt/package/lean/luci-app-filetransfer
+rm -rf openwrt/package/lean/k3screenctrl
 
 # Install to emmc
 #git clone https://github.com/tuanqing/install-program package/install-program
@@ -48,6 +49,9 @@ git clone https://github.com/wltc2005/openwrt-redsocks2.git package/custom/redso
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/argon-config
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/custom/autotimeset
 git clone https://github.com/trombonist852/custom.git package/custom/filetransfer
+git clone https://github.com/lwz322/k3screenctrl.git package/custom/k3screenctrl
+git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/custom/luci-app-k3screenctrl
+git clone https://github.com/lwz322/k3screenctrl_build.git package/custom/k3screenctrl_build
 
 #Add files
 #mkdir package/base-files/files/etc/modules.d
