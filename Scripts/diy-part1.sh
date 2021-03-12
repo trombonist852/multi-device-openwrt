@@ -33,7 +33,7 @@ sed -i 's#root::0:0:99999:7:::#root:$1$fe9OTETj$lEJwiQW4hDxi/GNj4JUlC1:18679:0:9
 rm -rf package/lean/qBittorrent
 rm -rf package/lean/qt5
 rm -rf package/diy/OpenAppFilter
-rm -rf openwrt/package/lean/luci-app-filetransfer
+rm -rf package/lean/luci-app-filetransfer
 
 # Install to emmc
 git clone https://github.com/tuanqing/install-program package/install-program
