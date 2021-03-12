@@ -33,8 +33,8 @@ sed -i 's/hd0/hd3/g' target/linux/x86/image/grub-efi.cfg
 rm -rf package/lean/qBittorrent
 rm -rf package/lean/qt5
 rm -rf package/diy/OpenAppFilter
-rm -rf openwrt/package/lean/luci-app-filetransfer
-rm -rf openwrt/package/lean/k3screenctrl
+rm -rf package/lean/luci-app-filetransfer
+rm -rf package/lean/k3screenctrl
 
 # Install to emmc
 #git clone https://github.com/tuanqing/install-program package/install-program
