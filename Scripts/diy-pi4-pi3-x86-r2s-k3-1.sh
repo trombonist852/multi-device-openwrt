@@ -29,6 +29,9 @@ sed -i 's#root::0:0:99999:7:::#root:$1$fe9OTETj$lEJwiQW4hDxi/GNj4JUlC1:18679:0:9
 #Modify Boot Disk(for X86)
 sed -i 's/hd0/hd3/g' target/linux/x86/image/grub-efi.cfg
 
+#Compile K3 Only
+sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm_k3|TARGET_DEVICES += phicomm_k3|' target/linux/bcm53xx/image/Makefile
+
 #Del package
 rm -rf package/lean/qBittorrent
 rm -rf package/lean/qt5
