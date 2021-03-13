@@ -26,7 +26,7 @@ env:
   REPO_BRANCH: 21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: MenuConfig/R2s.config
-  DIY_P1_SH: Scripts/diy-pi4-pi3-x86-r2s-k3-1.sh
+  DIY_P1_SH: Scripts/diy-pi4-pi3-r2s-k3-1.sh
   DIY_P2_SH: Scripts/diy-pi4-pi3-x86-r2s-k3-2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
