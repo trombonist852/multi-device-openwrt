@@ -14,3 +14,4 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 rm -rf feeds/packages/libs/libcap && svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
 sed -i 's#luci-theme-bootstrap#luci-theme-argon-19.07#g' feeds/luci/collections/luci/Makefile
+sed -i 's/bootstrap/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci
