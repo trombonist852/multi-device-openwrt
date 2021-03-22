@@ -39,7 +39,7 @@ rm -rf package/lean/luci-app-filetransfer
 git clone https://github.com/tuanqing/install-program package/install-program
 
 # Theme
-svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom package/custom/luci-theme-infinityfreedom
+git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/custom/luci-theme-infinityfreedom
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
 
 #Add Package
