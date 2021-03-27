@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: main
+  REPO_BRANCH: 21.02
   FEEDS_CONF: feeds.conf.default
   KERNEL_CONF: MenuConfig/config-5.4
   CONFIG_FILE: MenuConfig/x86.config
