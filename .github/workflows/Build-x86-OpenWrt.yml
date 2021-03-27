@@ -24,7 +24,7 @@ on:
 env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: main
-  FEEDS_CONF: feedsx86.conf.default
+  FEEDS_CONF: feeds.conf.default
   KERNEL_CONF: MenuConfig/config-5.4
   CONFIG_FILE: MenuConfig/x86.config
   DIY_P1_SH: Scripts/x86-1.sh
