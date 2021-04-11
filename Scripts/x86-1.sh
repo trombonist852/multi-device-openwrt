@@ -55,6 +55,7 @@ git clone https://github.com/trombonist852/custom.git package/custom/filetransfe
 git clone https://github.com/lwz322/k3screenctrl.git package/custom/k3screenctrl
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/custom/luci-app-k3screenctrl
 git clone https://github.com/lwz322/k3screenctrl_build.git package/custom/k3screenctrl_build
+git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-app-godproxy
 
 #Add files
 #mkdir package/base-files/files/etc/modules.d
