@@ -164,7 +164,7 @@ jobs:
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
-        files: ${{ env.FIRMWARE }} Phicomm K3
+        files: ${{ env.FIRMWARE }}/Phicomm K3
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
