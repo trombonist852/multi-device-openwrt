@@ -17,7 +17,7 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 #Modify Router Name
-sed -i 's/OpenWrt/Trb.Corp/g' package/base-files/files/bin/config_generate
+#sed -i 's/OpenWrt/Trb.Corp/g' package/base-files/files/bin/config_generate
 
 #Modify Default Network Interface
 sed -i '/ucidef_set_interface_lan/s/eth0/eth1 eth2 eth3 eth4 eth5/g' package/base-files/files/etc/board.d/99-default_network
@@ -30,7 +30,7 @@ sed -i 's#root::0:0:99999:7:::#root:$1$fe9OTETj$lEJwiQW4hDxi/GNj4JUlC1:18679:0:9
 sed -i 's/hd0/hd2/g' target/linux/x86/image/grub-efi.cfg
 
 #Compile K3 Only
-sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm_k3|TARGET_DEVICES += phicomm_k3|' target/linux/bcm53xx/image/Makefile
+#sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm_k3|TARGET_DEVICES += phicomm_k3|' target/linux/bcm53xx/image/Makefile
 
 #Del package
 rm -rf package/lean/qBittorrent
