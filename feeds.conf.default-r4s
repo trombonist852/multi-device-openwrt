@@ -7,4 +7,4 @@ src-git OpenClash https://github.com/vernesong/OpenClash.git;master
 src-git nas https://github.com/linkease/nas-packages.git;master
 src-git Helloworld https://github.com/fw876/helloworld.git;master
 src-git oaf https://github.com/destan19/OpenAppFilter.git;master
-src-git qBittorrent https://github.com/KryptonLee/qBittorrent-openwrt-package.git;master
+#src-git qBittorrent https://github.com/KryptonLee/qBittorrent-openwrt-package.git;master
