@@ -51,6 +51,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/custom/autotimeset
 git clone https://github.com/trombonist852/custom.git package/custom/filetransfer
 git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-app-godproxy
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/custom/luci-app-jd-dailybonus
 git clone https://github.com/jiawm/luci-app-poweroff.git package/poweroff
 
 #Add files
