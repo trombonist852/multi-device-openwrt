@@ -42,7 +42,7 @@ rm -rf package/lean/luci-theme-argon
 
 # Theme
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/custom/luci-theme-infinityfreedom
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon
 
 #Add Package
 git clone https://github.com/tty228/luci-app-serverchan.git package/custom/serverchan
