@@ -19,8 +19,8 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 #Modify Router Name 修改路由器名称
 #sed -i 's/OpenWrt/路由器名称/g' package/base-files/files/bin/config_generate
 
-#Modify修改固件版本
-sed -i 's/Mod by Lienol//g' /usr/lib/lua//luci/version.lua
+#Modify修改固件版本,有错误
+#sed -i 's/Mod by Lienol//g' /usr/lib/lua//luci/version.lua
 
 #Modify Default Network Interface修改默认lan口和wan口对应物理网口
 #sed -i '/ucidef_set_interface_lan/s/eth0/eth1 eth2 eth3 eth4 eth5/g' package/base-files/files/etc/board.d/99-default_network
