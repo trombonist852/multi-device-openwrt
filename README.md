@@ -1,10 +1,10 @@
 《.github/workflows》里面的脚本部分说明
 
-    REPO_URL: https://github.com/coolsnowwolf/lede （更换链接可以编译不一样大神的固件）
+    REPO_URL: https://github.com/Lienol/openwrt （更换链接可以编译不一样大神的固件）
     REPO_BRANCH: master     （跟上面链接对应的分支，比如Lienol大神的就有dev-19.07跟dev-master分支，要编译什么固件就要写什么的）
     FEEDS_CONF: feeds.conf.default     （可以在根目录创建一个feeds.conf.default文件，也是自定义插件使用）
-    CONFIG_FILE: diy.config     （上面已经说清楚了）
-    DIY_OP_SH: diy-lede.sh     （上面已经说清楚了）
+    CONFIG_FILE: diy.config     （自定义配置）
+    DIY_OP_SH: diy.sh     （一些设置）
     SSH_ACTIONS: true     （SSH远程连接服务，true开,false关）
     UPLOAD_BIN_DIR: false     （上传BIN文件夹到github空,包含（固件+IPK）,跟上传固件二选一即可,true开,false关）
     UPLOAD_FIRMWARE: true     （上传固件到github空,跟上传BIN文件夹二选一即可,true开,false关）
