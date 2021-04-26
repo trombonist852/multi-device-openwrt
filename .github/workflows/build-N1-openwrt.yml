@@ -26,8 +26,8 @@ env:
   REPO_BRANCH: 21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: MenuConfig/N1.config
-  DIY_P1_SH: Scripts/diy-part1.sh
-  DIY_P2_SH: Scripts/diy-part2.sh
+  DIY_P1_SH: Scripts/diy-N1-1.sh
+  DIY_P2_SH: Scripts/diy-N1-2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
