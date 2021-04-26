@@ -53,6 +53,7 @@ git clone https://github.com/trombonist852/custom.git package/custom/filetransfe
 git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-app-godproxy
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/custom/luci-app-jd-dailybonus
 git clone https://github.com/jiawm/luci-app-poweroff.git package/poweroff
+git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd
 
 #Add files
 #mkdir package/base-files/files/etc/modules.d
