@@ -35,6 +35,7 @@ rm -rf package/lean/qt5
 rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-app-filetransfer
 rm -rf package/lean/k3screenctrl
+rm -rf package/lean/luci-theme-argon
 
 # Install to emmc
 #git clone https://github.com/tuanqing/install-program package/install-program
