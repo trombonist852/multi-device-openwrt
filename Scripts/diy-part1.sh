@@ -40,7 +40,6 @@ rm -rf package/diy/luci-app-dockerman
 git clone https://github.com/tuanqing/install-program package/install-program
 
 # Theme
-git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/custom/luci-theme-infinityfreedom
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
 
 #Add Package
@@ -54,4 +53,4 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 #Add files
 mkdir package/base-files/files/etc/modules.d
 svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
-svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/
+svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
