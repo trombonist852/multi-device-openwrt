@@ -34,6 +34,7 @@ rm -rf package/lean/qBittorrent
 rm -rf package/lean/qt5
 rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-app-filetransfer
+rm -rf package/diy/luci-app-dockerman
 
 # Install to emmc
 git clone https://github.com/tuanqing/install-program package/install-program
