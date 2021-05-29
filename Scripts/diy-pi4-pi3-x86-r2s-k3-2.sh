@@ -15,3 +15,4 @@
 #rm -rf feeds/packages/libs/libcap && svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
 sed -i 's#luci-theme-bootstrap#luci-theme-argon-19.07#g' feeds/luci/collections/luci/Makefile
 sed -i 's/bootstrap/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci
+sed -i 's#include ../../luci.mk#include $(TOPDIR)/feeds/luci/luci.mk#g' package/diy/luci-app-dockerman/Makefile
