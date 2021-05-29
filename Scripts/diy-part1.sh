@@ -54,3 +54,4 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 #Add files
 mkdir package/base-files/files/etc/modules.d
 svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
+svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/
