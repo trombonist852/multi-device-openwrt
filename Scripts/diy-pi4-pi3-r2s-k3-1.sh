@@ -39,6 +39,7 @@ rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-app-filetransfer
 rm -rf package/lean/k3screenctrl
 rm -rf package/diy/luci-app-dockerman
+rm -rf package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
 
 # Install to emmc
 #git clone https://github.com/tuanqing/install-program package/install-program
@@ -61,3 +62,4 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 #mkdir package/base-files/files/etc/modules.d
 #svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
 svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
+svn export https://github.com/xiangfeidexiaohuo/Phicomm-K3_Wireless-Firmware/trunk/brcmfmac4366c-pcie.bin_69027 package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
