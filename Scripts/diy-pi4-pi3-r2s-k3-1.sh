@@ -46,13 +46,18 @@ rm -rf package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac43
 
 # Theme
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
+rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/footer.htm
+rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/header.htm
+svn export https://github.com/trombonist852/custom/trunk/footer.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
+svn export https://github.com/trombonist852/custom/trunk/header.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
+
 
 #Add Package
 git clone https://github.com/tty228/luci-app-serverchan.git package/custom/serverchan
 git clone https://github.com/wltc2005/openwrt-redsocks2.git package/custom/redsocks2
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/argon-config
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/custom/autotimeset
-git clone https://github.com/trombonist852/custom.git package/custom/filetransfer
+#git clone https://github.com/trombonist852/custom.git package/custom/filetransfer
 git clone https://github.com/lwz322/k3screenctrl.git package/custom/k3screenctrl
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/custom/luci-app-k3screenctrl
 git clone https://github.com/lwz322/k3screenctrl_build.git package/custom/k3screenctrl_build
@@ -63,3 +68,4 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 #svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
 svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
 svn export https://github.com/xiangfeidexiaohuo/Phicomm-K3_Wireless-Firmware/trunk/brcmfmac4366c-pcie.bin_69027 package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
+svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer
