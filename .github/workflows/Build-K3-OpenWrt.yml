@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 21.02
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: MenuConfig/K3.config
   DIY_P1_SH: Scripts/diy-pi4-pi3-r2s-k3-1.sh
