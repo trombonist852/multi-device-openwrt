@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 21.02
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: MenuConfig/N1.config
   DIY_P1_SH: Scripts/diy-part1.sh
