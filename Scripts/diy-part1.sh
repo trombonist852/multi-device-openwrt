@@ -41,10 +41,10 @@ git clone https://github.com/tuanqing/install-program package/install-program
 
 # Theme
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
-rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/footer.htm
-rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/header.htm
-svn export https://github.com/trombonist852/custom/trunk/footer.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
-svn export https://github.com/trombonist852/custom/trunk/header.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
+#rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/footer.htm
+#rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/header.htm
+#svn export https://github.com/trombonist852/custom/trunk/footer.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
+#svn export https://github.com/trombonist852/custom/trunk/header.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
 
 
 #Add Package
