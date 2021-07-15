@@ -41,6 +41,7 @@ rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-app-filetransfer
 rm -rf package/lean/k3screenctrl
 rm -rf package/diy/luci-app-dockerman
+rm -rf package/kernel/r8125
 
 # Install to emmc
 #git clone https://github.com/tuanqing/install-program package/install-program
@@ -67,3 +68,4 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 #svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
 svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
 svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer
+svn checkout https://github.com/trombonist852/custom/trunk/r8125-9.005.06 package/custom/r8125
