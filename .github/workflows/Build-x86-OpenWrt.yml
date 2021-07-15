@@ -25,7 +25,7 @@ env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  KERNEL_CONF: MenuConfig/config-5.10
+  KERNEL_CONF: MenuConfig/config-5.4
   CONFIG_FILE: MenuConfig/x86.config
   DIY_P1_SH: Scripts/x86-1.sh
   DIY_P2_SH: Scripts/diy-pi4-pi3-x86-r2s-k3-2.sh
@@ -78,7 +78,7 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-       # [ -e $KERNEL_CONF_FILE ] && mv $KERNEL_CONF openwrt/target/linux/x86
+#        [ -e $KERNEL_CONF_FILE ] && mv $KERNEL_CONF openwrt/target/linux/x86
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
