@@ -25,8 +25,6 @@ sed -i 's#root::0:0:99999:7:::#root:$1$fe9OTETj$lEJwiQW4hDxi/GNj4JUlC1:18679:0:9
 #sed -i 's/hd0/hd2/g' target/linux/x86/image/grub-efi.cfg
 
 #Del package
-rm -rf package/lean/qBittorrent
-rm -rf package/lean/qt5
 rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-app-filetransfer
 rm -rf package/lean/k3screenctrl
@@ -44,7 +42,6 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/custom/openwrt-passwall
 git clone https://github.com/linkease/nas-packages.git package/custom/nas-packages
 git clone https://github.com/destan19/OpenAppFilter.git package/custom/OpenAppFilter
-git clone https://github.com/KryptonLee/qBittorrent-openwrt-package.git package/custom/qBittorrent-openwrt-package
 
 #Add files
 svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
