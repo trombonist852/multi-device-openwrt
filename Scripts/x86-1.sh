@@ -44,7 +44,7 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/custom/openwrt-passwall
 git clone https://github.com/linkease/nas-packages.git package/custom/nas-packages
 git clone https://github.com/destan19/OpenAppFilter.git package/custom/OpenAppFilter
-git clone https://github.com/KryptonLee/qBittorrent-openwrt-package.git package/custom/qBittorrent-openwrt-package
+git clone https://github.com/trombonist852/qBittorrent-openwrt-package.git package/custom/qBittorrent-openwrt-package
 
 #Add files
 svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
