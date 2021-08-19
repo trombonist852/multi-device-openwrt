@@ -29,6 +29,8 @@ rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-app-filetransfer
 rm -rf package/lean/k3screenctrl
 rm -rf package/diy/luci-app-dockerman
+rm -rf package/lean/qBittorrent
+rm -rf package/lean/qt5
 
 # Theme
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
@@ -42,6 +44,7 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/custom/openwrt-passwall
 git clone https://github.com/linkease/nas-packages.git package/custom/nas-packages
 git clone https://github.com/destan19/OpenAppFilter.git package/custom/OpenAppFilter
+git clone https://github.com/KryptonLee/qBittorrent-openwrt-package.git package/custom/qBittorrent-openwrt-package
 
 #Add files
 svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
