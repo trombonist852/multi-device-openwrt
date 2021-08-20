@@ -31,6 +31,7 @@ rm -rf package/lean/k3screenctrl
 rm -rf package/diy/luci-app-dockerman
 rm -rf package/lean/qBittorrent
 rm -rf package/lean/qt5
+rm -rf package/kernel/r8125
 
 # Theme
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
