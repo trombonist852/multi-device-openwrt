@@ -53,6 +53,8 @@ git clone https://github.com/wltc2005/openwrt-redsocks2.git package/custom/redso
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/argon-config
 git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/custom/autotimeset
 git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-app-godproxy
+git clone https://github.com/linkease/nas-packages-luci.git package/custom/nas-package-luci
+
 
 #Add files
 mkdir package/base-files/files/etc/modules.d
