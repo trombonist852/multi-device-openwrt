@@ -59,6 +59,7 @@ git clone https://github.com/lwz322/k3screenctrl.git package/custom/k3screenctrl
 git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/custom/luci-app-k3screenctrl
 git clone https://github.com/lwz322/k3screenctrl_build.git package/custom/k3screenctrl_build
 git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-app-godproxy
+git clone https://github.com/linkease/nas-packages-luci.git package/custom/nas-package-luci
 
 #Add files
 #mkdir package/base-files/files/etc/modules.d
