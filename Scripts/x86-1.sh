@@ -44,6 +44,7 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/custom/au
 git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-app-godproxy
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/custom/openwrt-passwall
 git clone https://github.com/linkease/nas-packages.git package/custom/nas-packages
+git clone https://github.com/linkease/nas-packages-luci.git package/custom/nas-package-luci
 git clone https://github.com/destan19/OpenAppFilter.git package/custom/OpenAppFilter
 git clone https://github.com/trombonist852/qBittorrent-openwrt-package.git package/custom/qBittorrent-openwrt-package
 
