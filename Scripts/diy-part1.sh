@@ -61,3 +61,4 @@ mkdir package/base-files/files/etc/modules.d
 svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
 svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
 svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer
+svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/custom/luci-lib-fs
