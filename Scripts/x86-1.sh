@@ -53,5 +53,6 @@ svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerm
 svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer
 svn checkout https://github.com/trombonist852/custom/trunk/r8125-9.005.06 package/custom/r8125-9.005.06
 svn checkout https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/custom/luci-app-ssr-plus
+svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/custom/luci-lib-fs
 
 sed -i 's#include ../../luci.mk#include $(TOPDIR)/feeds/luci/luci.mk#g' package/diy/luci-app-dockerman/Makefile
