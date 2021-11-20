@@ -69,3 +69,4 @@ git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-ap
 svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
 svn export https://github.com/xiangfeidexiaohuo/Phicomm-K3_Wireless-Firmware/trunk/brcmfmac4366c-pcie.bin_69027 package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
 svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer
+svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/custom/luci-lib-fs
