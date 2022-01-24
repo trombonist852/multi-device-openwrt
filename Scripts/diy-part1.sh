@@ -24,41 +24,33 @@ sed -i 's/OpenWrt/Trb.Corp/g' package/base-files/files/bin/config_generate
 #sed -i '/ucidef_set_interface_wan/s/eth1/eth0/g' package/base-files/files/etc/board.d/99-default_network
 
 #Modify Default Password
-sed -i 's#root::0:0:99999:7:::#root:$1$fe9OTETj$lEJwiQW4hDxi/GNj4JUlC1:18679:0:99999:7:::#g' package/base-files/files/etc/shadow
+#sed -i 's#root::0:0:99999:7:::#root:$1$fe9OTETj$lEJwiQW4hDxi/GNj4JUlC1:18679:0:99999:7:::#g' package/base-files/files/etc/shadow
 
 #Modify Boot Disk(for X86)
 #sed -i 's/hd0/hd3/g' target/linux/x86/image/grub-efi.cfg
 
 #Del package
-rm -rf package/lean/qBittorrent
-rm -rf package/lean/qt5
-rm -rf package/diy/OpenAppFilter
-rm -rf package/lean/luci-app-filetransfer
-rm -rf package/diy/luci-app-dockerman
+#rm -rf package/lean/qBittorrent
+#rm -rf package/lean/qt5
+#rm -rf package/diy/OpenAppFilter
+#rm -rf package/lean/luci-app-filetransfer
+#rm -rf package/diy/luci-app-dockerman
 
 # Install to emmc
-git clone https://github.com/tuanqing/install-program package/install-program
-
-# Theme
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
-#rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/footer.htm
-#rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/header.htm
-#svn export https://github.com/trombonist852/custom/trunk/footer.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
-#svn export https://github.com/trombonist852/custom/trunk/header.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
-
+#git clone https://github.com/tuanqing/install-program package/install-program
 
 #Add Package
-git clone https://github.com/tty228/luci-app-serverchan.git package/custom/serverchan
-git clone https://github.com/wltc2005/openwrt-redsocks2.git package/custom/redsocks2
-git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/argon-config
-git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/custom/autotimeset
-git clone https://github.com/godros/luci-app-godproxy.git package/custom/luci-app-godproxy
+#git clone https://github.com/tty228/luci-app-serverchan.git package/custom/serverchan
+#git clone https://github.com/wltc2005/openwrt-redsocks2.git package/custom/redsocks2
+#git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/argon-config
+#git clone https://github.com/sirpdboy/luci-app-autotimeset.git package/custom/autotimeset
+git clone https://github.com/1wrt/luci-app-ikoolproxy.git package/custom/luci-app-ikoolproxy
+git clone https://github.com/linkease/nas-packages.git package/custom/nas-packages
 git clone https://github.com/linkease/nas-packages-luci.git package/custom/nas-package-luci
 
 
 #Add files
 mkdir package/base-files/files/etc/modules.d
-svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
-svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
-svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer
-svn checkout https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/custom/luci-lib-fs
+#svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
+svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer-mod
+svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/custom/luci-app-amlogic
