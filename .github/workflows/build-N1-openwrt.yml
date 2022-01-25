@@ -142,7 +142,7 @@ jobs:
           fi
           cd ${{ github.workspace }}/dist
           tar -czf Packages.tar.gz Packages
-          chmod 0755 *.img
+          sudo chmod 777 *.img
           gzip *.img
           rm -rf Packages
           sha256sum `ls -1 | sort` > sha256sums
