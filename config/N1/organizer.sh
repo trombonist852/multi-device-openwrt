@@ -7,5 +7,5 @@ git clone https://github.com/trombonist852/packit.git opt/openwrt_packit
 cp -r -f dist/immortalwrt-armvirt-64-default-rootfs.tar.gz opt/openwrt_packit
 cd opt/openwrt_packit
 sudo ./mk_s905d_n1.sh
-gzip output/*.img
-mv output/*.img.gz ../dist/
+sudo gzip output/*.img
+sudo mv /home/runner/work/multi-device-openwrt/multi-device-openwrt/opt/openwrt_packit/output/*.img.gz ../dist/
