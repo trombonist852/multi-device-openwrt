@@ -35,6 +35,7 @@ sed -i 's/ImmortalWrt/Trb.Corp/g' package/base-files/files/bin/config_generate
 #rm -rf package/diy/OpenAppFilter
 #rm -rf package/lean/luci-app-filetransfer
 #rm -rf package/diy/luci-app-dockerman
+rm -rf package/emortal/default-settings/Makefile
 
 # Install to emmc
 #git clone https://github.com/tuanqing/install-program package/install-program
@@ -54,3 +55,4 @@ git clone https://github.com/linkease/nas-packages-luci.git package/custom/nas-p
 #svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
 svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer-mod
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/custom/luci-app-amlogic
+svn export https://github.com/trombonist852/custom/trunk/Makefile package/emortal/default-settings/
