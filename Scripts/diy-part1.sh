@@ -17,7 +17,7 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 #Modify Router Name
-sed -i 's/OpenWrt/Trb.Corp/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/Trb.Corp/g' package/base-files/files/bin/config_generate
 
 #Modify Default Network Interface
 #sed -i '/ucidef_set_interface_lan/s/eth0/eth1 eth2 eth3 eth4 eth5/g' package/base-files/files/etc/board.d/99-default_network
@@ -50,7 +50,7 @@ git clone https://github.com/linkease/nas-packages-luci.git package/custom/nas-p
 
 
 #Add files
-mkdir package/base-files/files/etc/modules.d
+#mkdir package/base-files/files/etc/modules.d
 #svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
 svn checkout https://github.com/trombonist852/custom/trunk/luci-app-filetransfer package/custom/luci-app-filetransfer-mod
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/custom/luci-app-amlogic
