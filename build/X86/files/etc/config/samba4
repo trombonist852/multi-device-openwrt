@@ -1,0 +1,17 @@
+
+config samba
+	option workgroup 'WORKGROUP'
+	option charset 'UTF-8'
+	option description 'Samba on OpenWRT'
+	option enable_extra_tuning '1'
+	option macos '1'
+	option allow_legacy_protocols '1'
+
+config sambashare
+	option name '文件'
+	option path '/mnt/sda1'
+	option read_only 'no'
+	option users 'root'
+	option guest_ok 'yes'
+	option create_mask '0777'
+	option dir_mask '0777'

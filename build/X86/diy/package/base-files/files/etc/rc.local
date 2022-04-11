@@ -1,0 +1,7 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+ethtool -s eth2 speed 2500 autoneg on duplex full
+ethtool -s eth3 speed 2500 autoneg on duplex full
+ln -s /usr/bin/ntfs-3g /sbin/mount.ntfs
+sleep 20s && /etc/init.d/mwan3 restart
+sleep 30s && /etc/init.d/passwall restart

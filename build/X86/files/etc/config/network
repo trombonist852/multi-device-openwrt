@@ -1,0 +1,58 @@
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+	option ula_prefix 'fd5b:ecc5:577a::/48'
+
+config device
+	option name 'br-lan'
+	option type 'bridge'
+	list ports 'eth2'
+	list ports 'eth3'
+	option ipv6 '0'
+
+config interface 'lan'
+	option device 'br-lan'
+	option proto 'static'
+	option ipaddr '192.168.1.1'
+	option netmask '255.255.255.0'
+	option delegate '0'
+
+config interface 'wan'
+	option device 'eth0'
+	option proto 'pppoe'
+	option username 'ad73523589'
+	option password '81803522'
+	option ipv6 '0'
+	option delegate '0'
+	option metric '10'
+
+config interface 'wan_1'
+	option device 'eth1'
+	option proto 'pppoe'
+	option username '02107306790'
+	option password '306790'
+	option ipv6 '0'
+	option delegate '0'
+	option metric '11'
+
+config interface 'docker'
+	option device 'docker0'
+	option proto 'none'
+	option auto '0'
+
+config device
+	option type 'bridge'
+	option name 'docker0'
+
+config device
+	option name 'eth0'
+	option ipv6 '0'
+
+config device
+	option name 'pppoe-wan'
+	option ipv6 '0'
+
