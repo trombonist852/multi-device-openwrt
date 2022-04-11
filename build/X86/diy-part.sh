@@ -34,6 +34,8 @@ svn co https://github.com/linkease/nas-packages/trunk/network/services/ddnsto pa
 svn co https://github.com/linkease/nas-packages/trunk/network/services/linkease package/custom/linkease
 svn co https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-ddnsto package/custom/luci-app-ddnsto
 svn co https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-linkease package/custom/luci-app-linkease
+svn co https://github.com/jjm2473/openwrt-apps/trunk/homebox package/custom/homebox
+svn co https://github.com/jjm2473/openwrt-apps/trunk/luci-app-homebox package/custom/luci-app-homebox
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile           # 选择argon为默认主题
 
