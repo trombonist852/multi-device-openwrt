@@ -2,7 +2,13 @@
 <details>
 <summary>🆙点击查看更新说明</summary>
 <br>
-  
+
+2022年7月28号，编译时候在diy-part.sh文件里面可以对OpenClash代码进行分支选择，可选master或者dev分支，选错或者不选就默认使用master分支
+
+
+2022年7月6号16点，去除重复插件
+
+
 2022年4月27号修改
   
 1、把 build/openwrt_amlogic/diy-part.sh 里面的晶晨打包组合的路径修改过了，请及时更新
