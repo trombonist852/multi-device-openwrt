@@ -36,31 +36,30 @@ sed -i "s/bootstrap/argon/ig" feeds/luci/collections/luci/Makefile
 
 
 # 编译多主题时,设置固件默认主题（可自行修改您要的,主题名称必须对,比如下面代码的[argon],和肯定编译了该主题,要不然进不了后台）
-#sed -i "/exit 0/i\uci set luci.main.mediaurlbase='/luci-static/argon' && uci commit luci" "$FIN_PATH"
+#sed -i "/exit 0/i\uci set luci.main.mediaurlbase='/luci-static/argon' && uci commit luci" "${FIN_PATH}"
 
 
 # 增加个性名字 ${Author} 默认为你的github帐号,修改时候把 ${Author} 替换成你要的
-sed -i "s/OpenWrt /${Author} compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" "$ZZZ_PATH"
+sed -i "s/OpenWrt /${Author} compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" "${ZZZ_PATH}"
 
 
 # 设置首次登录后台密码为空（进入openwrt后自行修改密码）
-sed -i '/CYXluq4wUazHjmCDBCqXF/d' "$ZZZ_PATH"
-
-
-# 删除默认防火墙
-sed -i '/to-ports 53/d' "$ZZZ_PATH"
+sed -i '/CYXluq4wUazHjmCDBCqXF/d' "${ZZZ_PATH}"
 
 
 # 取消路由器每天跑分任务
-sed -i "/exit 0/i\sed -i '/coremark/d' /etc/crontabs/root" "$FIN_PATH"
+sed -i "/exit 0/i\sed -i '/coremark/d' /etc/crontabs/root" "${FIN_PATH}"
 
 
 # 更改使用OpenClash的分支代码，把下面的master改成dev就使用dev分支，改master就是用master分支，改错的话就默认使用master分支
-echo "OpenClash_branch" > master
+export OpenClash_branch='master'
 
 
 # 设置打包固件的机型，内核组合（可用内核是时时变化的,过老的内核就删除的，所以要选择什么内核请看说明）
-# 当前可用机型 s922x s922x-n2 s922x-reva a311d s905x3 s905x2 s905x2-km3 s905l3a s912 s912-m8s s905d s905d-ki s905x s905w s905
+# 当前可用机型
+# s905x3 s905d s912 a311d s922x s922x-n2 s922x-reva s905x3 s905x3-b s905x2
+# s912-m8s s905d s905d-ki s905x s905w s905 s905l3a s905x2-km3 s912
+# 可选内核 （5.4） （5.10） （5.15） （5.19） （6.0）
 
 cat >"$AMLOGIC_SH_PATH" <<-EOF
 amlogic_model=s905x3_s905x2_s905x_s905w_s905d_s922x_s912
